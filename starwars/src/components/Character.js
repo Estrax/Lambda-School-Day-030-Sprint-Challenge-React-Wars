@@ -3,7 +3,7 @@ import React from 'react';
 const Character = (props) => {
 	return (
 		<div>
-			<h1>Luke Skywalker</h1>
+			<h1>{props.character.name}</h1>
 		</div>
 	);
 }

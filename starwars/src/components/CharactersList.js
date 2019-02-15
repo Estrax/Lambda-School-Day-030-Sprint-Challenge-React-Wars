@@ -1,10 +1,11 @@
 import React from 'react';
+import Character from './Character';
 
 const CharactersList = (props) => {
 	return (
-		<div>
-			<h1>Lorem Ipsum</h1>
-		</div>
+		<ul>
+			{props.characters.map(character => <Character key={character.created} character={character} />)}
+		</ul>
 	);
 }
 
