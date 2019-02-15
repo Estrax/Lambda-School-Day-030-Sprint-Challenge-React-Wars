@@ -6,7 +6,7 @@ React JS is a library to build rich user interfaces. It is focused on making the
 
 2.  What does it mean to _think_ in react?
 
-To think in react is to apply the knowledge about how is the Virtual DOM working, what are the components lifecycle methods and how does the data flow look like - in the development process - to make it as smooth as it can be.
+To think in react is to apply the knowledge about how is the Virtual DOM working, how to break the UI into smaller (reusable) components, what are the components lifecycle methods and how does the data flow (props, state) look like - in the development process - to make it as smooth as it can be.
 
 3.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 

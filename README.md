@@ -30,7 +30,20 @@ React JS is a library to build rich user interfaces. It is focused on making the
 
 - [x] What does it mean to _think_ in react?
 
-To think in react is to apply the knowledge about how is the Virtual DOM working, what are the components lifecycle methods and how does the data flow look like - in the development process - to make it as smooth as it can be.
+To think in react is to apply the knowledge about how is the Virtual DOM working, how to break the UI into smaller (reusable) components, what are the components lifecycle methods and how does the data flow (props, state) look like - in the development process - to make it as smooth as it can be.
+
+
+
+Break The UI Into A Component Hierarchy
+
+Build A Static Version in React
+
+Identify The Minimal (but complete) Representation Of UI State
+
+Identify Where Your State Should Live
+
+Add Inverse Data Flow
+
 
 - [x] Describe state.
 
