@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Character = () => {
+const Character = (props) => {
 	return (
 		<div>
 			<h1>Luke Skywalker</h1>
