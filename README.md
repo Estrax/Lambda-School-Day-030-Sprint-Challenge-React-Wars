@@ -26,11 +26,13 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-React JS is a library to build rich user interfaces. It is focused on making the development and maintenance processes easy, fast and simple - that's why it promotes the use of reusable components. React allows to handle interactions without the need to reload the whole page by using the Virtual DOM. It re-renders the parts of the page that change.
+React JS is a library to build rich user interfaces using a defined pattern. It is focused on making the development and maintenance processes easy, fast and simple - that's why it promotes the use of reusable (`DRY`) components. React allows to handle interactions without the need to reload the whole page by using the Virtual DOM - it re-renders only the parts of the page that changed.
+
+The main problem that React tries to solve is the way of how the application manages the state and deals with the large amounts of objects that change over the time without the need to reload the page every time at least one object changed.
 
 - [x] What does it mean to _think_ in react?
 
-To think in react is to apply the knowledge about how is the Virtual DOM working, how to break the UI into smaller (reusable) components, what are the components lifecycle methods and how does the data flow (props, state) look like - in the development process - to make it as smooth as it can be.
+To think in react is to apply the knowledge about how is the Virtual DOM working, how to break the UI into smaller (reusable) components, what are the components lifecycle methods, how to build interactions and how does the data flow (props, state) look like - in the development process - to make it as smooth as it can be.
 
 - [x] Describe state.
 
