@@ -2,16 +2,21 @@ import React, { Component } from 'react';
 import './App.css';
 import StarWars from './components/StarWars';
 import CharacterAttributes from './components/CharacterAttributes';
+import PageButtons from './components/PageButtons';
 
 class App extends Component {
 	constructor() {
 		super();
 		this.state = {
 			starwarsChars: [],
-			currentChar: {}
+			currentChar: {},
+			prevData: undefined,
+			nextData: undefined
 		};
 
 		this.clickOnName = this.clickOnName.bind(this);
+		this.clickButtonPrev = this.clickButtonPrev.bind(this);
+		this.clickButtonNext = this.clickButtonNext.bind(this);
 	}
 
 	componentDidMount() {
@@ -27,14 +32,18 @@ class App extends Component {
 				return res.json();
 			})
 			.then(data => {
-				this.setState({ starwarsChars: data.results });
+				this.setState({
+					starwarsChars: data.results,
+					prevData: data.previous,
+					nextData: data.next
+				});
 			})
 			.catch(err => {
 				throw new Error(err);
 			});
 	};
 
-	clickOnName(event){
+	clickOnName(event) {
 		let username = event.target.innerText;
 		this.setState({
 			...this.state,
@@ -42,12 +51,20 @@ class App extends Component {
 		});
 	}
 
+	clickButtonPrev(event) {
+		return this.getCharacters(this.state.prevData);
+	}
+
+	clickButtonNext(event) {
+		return this.getCharacters(this.state.nextData);
+	}
+
 	render() {
 		return (
 			<div className="App">
 				<h1 className="Header">React Wars</h1>
 				<StarWars characters={this.state.starwarsChars} clickOnName={this.clickOnName} />
-
+				<PageButtons prevDisabled={this.state.prevData === null || this.state.prevData === undefined} buttonPrev={this.clickButtonPrev} nextDisabled={this.state.nextData === null || this.state.nextData === undefined} buttonNext={this.clickButtonNext} />
 				<CharacterAttributes character={this.state.currentChar} />
 			</div>
 		);
