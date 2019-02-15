@@ -1,3 +1,15 @@
+.title-container {
+    width: 50%;
+    background: black;
+    border-radius: 40px;
+    margin: 0 auto;
+}
+.characters-title {
+    padding: 2rem 0;
+    color: red;
+    font-size: 3rem;
+}
+
 .character-attributes-container {
     position: relative;
     width: 50%;
