@@ -17,3 +17,21 @@
 .character-attributes-container .attribute-container .attribute-value {
     font-size: 1rem;
 }
+
+.page-buttons button {
+    background: black;
+    color: white;
+    font-size: 2rem;
+    border-radius: 40px;
+    width: 25%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.page-buttons button:hover {
+    background: red;
+}
+
+.page-buttons button:disabled {
+    background: #999;
+}
