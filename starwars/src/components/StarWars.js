@@ -5,7 +5,7 @@ import CharactersList from './CharactersList';
 const StarWars = (props) => {
 	return (
 		<div>
-			<CharactersList characters={props.characters} />
+			<CharactersList characters={props.characters} clickOnName={props.clickOnName} />
 		</div>
 	);
 }

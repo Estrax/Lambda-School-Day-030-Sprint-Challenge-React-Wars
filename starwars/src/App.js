@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
 import StarWars from './components/StarWars';
+import CharacterAttributes from './components/CharacterAttributes';
 
 class App extends Component {
 	constructor() {
 		super();
 		this.state = {
-			starwarsChars: []
+			starwarsChars: [],
+			currentChar: {}
 		};
+
+		this.clickOnName = this.clickOnName.bind(this);
 	}
 
 	componentDidMount() {
@@ -30,10 +34,21 @@ class App extends Component {
 			});
 	};
 
+	clickOnName(event){
+		let username = event.target.innerText;
+		this.setState({
+			...this.state,
+			currentChar: this.state.starwarsChars.filter(elem => elem.name===username)[0]
+		});
+	}
+
 	render() {
 		return (
 			<div className="App">
-				<StarWars characters={this.state.starwarsChars} />
+				<h1 className="Header">React Wars</h1>
+				<StarWars characters={this.state.starwarsChars} clickOnName={this.clickOnName} />
+
+				<CharacterAttributes character={this.state.currentChar} />
 			</div>
 		);
 	}

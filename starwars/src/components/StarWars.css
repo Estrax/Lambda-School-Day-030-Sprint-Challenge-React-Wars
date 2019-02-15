@@ -1,0 +1,19 @@
+.character-attributes-container {
+    position: relative;
+    width: 50%;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, .6);
+}
+
+.character-attributes-container .attribute-container {
+    border: 1px solid black;
+}
+
+.character-attributes-container .attribute-container .attribute-key {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.character-attributes-container .attribute-container .attribute-value {
+    font-size: 1rem;
+}

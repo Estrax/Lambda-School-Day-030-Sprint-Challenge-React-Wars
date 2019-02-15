@@ -2,9 +2,9 @@ import React from 'react';
 
 const Character = (props) => {
 	return (
-		<div>
-			<h1>{props.character.name}</h1>
-		</div>
+		<li onClick={props.clickOnName}>
+			{props.name}
+		</li>
 	);
 }
 
