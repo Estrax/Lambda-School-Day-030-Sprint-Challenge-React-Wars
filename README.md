@@ -32,19 +32,6 @@ React JS is a library to build rich user interfaces. It is focused on making the
 
 To think in react is to apply the knowledge about how is the Virtual DOM working, how to break the UI into smaller (reusable) components, what are the components lifecycle methods and how does the data flow (props, state) look like - in the development process - to make it as smooth as it can be.
 
-
-
-Break The UI Into A Component Hierarchy
-
-Build A Static Version in React
-
-Identify The Minimal (but complete) Representation Of UI State
-
-Identify Where Your State Should Live
-
-Add Inverse Data Flow
-
-
 - [x] Describe state.
 
 State is an object that determines how the component renders and behaves, so it allows to create dynamic and interactive components.
