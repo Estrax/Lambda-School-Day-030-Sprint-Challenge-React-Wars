@@ -1,0 +1,50 @@
+.title-container {
+    width: 50%;
+    background: black;
+    border-radius: 40px;
+    margin: 0 auto;
+}
+.characters-title {
+    padding: 2rem 0;
+    color: red;
+    font-size: 3rem;
+}
+
+.character-attributes-container {
+    position: relative;
+    width: 50%;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, .6);
+}
+
+.character-attributes-container .attribute-container {
+    border: 1px solid black;
+}
+
+.character-attributes-container .attribute-container .attribute-key {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.character-attributes-container .attribute-container .attribute-value {
+    font-size: 1.5rem;
+}
+
+.page-buttons button {
+    background: black;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 40px;
+    width: 20%;
+    margin: 1rem;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.page-buttons button:hover {
+    background: red;
+}
+
+.page-buttons button:disabled {
+    background: #999;
+}
